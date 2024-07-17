@@ -57,6 +57,46 @@ header {
   color: #ccc;
 }
 
+/**menu de navegacao**/
+
+.navegar-itens{
+  display: none;
+  margin-top: 5px;
+  padding: 0 20px;
+  background-image: url(./img/seta-para-baixo.png);
+  background-repeat: no-repeat;
+  margin-left: 15px;
+
+
+}
+
+.navegar-itens ul{
+  display: none;
+  list-style-type: none;
+  background-color: #000000;
+  opacity: 0.9;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: -140px;
+  text-align: center;
+}
+
+.navegar-itens ul li{
+  padding: 15px 0;
+}
+
+.navegar-itens ul li a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+.navegar-itens ul :hover{
+  background-color: #141414;
+}
+
+/** FIM menu de navegacao**/
+
+
 .seach {
   margin-top: 5px;
   width: 30%;
@@ -118,6 +158,11 @@ header {
   overflow: hidden;
   background-color: rgb(20, 20, 20);
   text-align: left;
+
+}
+
+.menu2:hover{
+  border: 1px solid white;
 }
 
 .menu2 a {
@@ -184,6 +229,7 @@ header {
 .show {
   transition: 1s;
   height: 270px;
+  border: 1px solid white;
 }
 
 .banner {
@@ -200,6 +246,9 @@ header {
 .titulo {
   padding: 50px;
   color: white;
+
+
+
 }
 
 .subtitulo {
@@ -290,7 +339,7 @@ header {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 15px 2%;
+  padding: 15px 0%;
 }
 
 .sliders::-webkit-scrollbar {
@@ -326,29 +375,31 @@ header {
 .slick-arrow {
   z-index: 1;
   width: 2%;
-  height: 50%;
+  height: 70%;
   font-size: 1px;
   color: transparent;
-
   position: absolute;
   background-color: transparent;
-
   border: 0;
+}
+
+.slick-arrow:hover{
+  background-color: #323232;
+  opacity: 0.2;
 }
 
 .slick-prev {
   background-image: url(./img/seta-esquerda.png);
   background-size: 100%;
   background-repeat: no-repeat;
-
   background-position: center;
-  top: 25%;
+  top: 15%;
   right: 98%;
 }
 
 .slick-next {
   left: 97.65%;
-  top: 25%;
+  top: 15%;
   background-image: url(./img/seta-direita.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -400,4 +451,17 @@ footer{
 
 .link li a:hover{
   text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 960px){
+  .navegar-itens{
+    display: block;
+  }
+
+
+  .itens{
+    display: none;
+  }
 }

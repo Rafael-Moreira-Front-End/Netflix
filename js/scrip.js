@@ -32,3 +32,15 @@ var iconMenu = document.querySelectorAll('.icon');
 
 });
 
+
+$(function(){
+
+    $('.navegar-itens').click(function(){
+        $('.navegar-itens').find('ul').slideToggle();
+    })
+
+
+});
+
+
+
